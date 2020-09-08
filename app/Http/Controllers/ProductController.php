@@ -36,7 +36,7 @@ class ProductController extends Controller
     public function index()
     {
 
-        $products = Product::with('media')->paginate(9);
+        $products = Product::with('media')->paginate();
 
         return view('product.index', ['products' => $products]);
     }
@@ -151,6 +151,6 @@ class ProductController extends Controller
     {
         $product->delete();
 
-        return redirect('/');
+        return redirect()->route('home');
     }
 }

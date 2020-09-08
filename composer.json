@@ -16,7 +16,8 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.2",
-        "spatie/laravel-medialibrary": "^8.0.0"
+        "spatie/laravel-medialibrary": "^8.0.0",
+        "themsaid/laravel-mail-preview": "^3.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.4",

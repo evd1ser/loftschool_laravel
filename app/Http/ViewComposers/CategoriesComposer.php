@@ -9,6 +9,6 @@ class CategoriesComposer
 {
     public function compose(View $view)
     {
-        return $view->with('categories', Category::all());
+        return $view->with('categories', Category::limit(Category::COUNT_LIMIT)->get());
     }
 }

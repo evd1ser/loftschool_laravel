@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "77e09d2b8cabdf9cc4b9af68fbe6cb7a",
+    "content-hash": "4fadb879643467623108e047142775b4",
     "packages": [
         {
             "name": "anlutro/l4-settings",
@@ -4402,6 +4402,60 @@
                 "dump"
             ],
             "time": "2020-08-17T07:42:30+00:00"
+        },
+        {
+            "name": "themsaid/laravel-mail-preview",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themsaid/laravel-mail-preview.git",
+                "reference": "e6d5af77174b10033fe06905f97036d550313551"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themsaid/laravel-mail-preview/zipball/e6d5af77174b10033fe06905f97036d550313551",
+                "reference": "e6d5af77174b10033fe06905f97036d550313551",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^7.0",
+                "illuminate/mail": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Themsaid\\MailPreview\\MailPreviewServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Themsaid\\MailPreview\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Said",
+                    "email": "themsaid@gmail.com"
+                }
+            ],
+            "description": "Adds a 'preview' mail driver for testing emails in laravel.",
+            "homepage": "https://github.com/themsaid/laravel-preview-mail-driver",
+            "keywords": [
+                "laravel",
+                "mail"
+            ],
+            "time": "2020-05-12T23:17:17+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

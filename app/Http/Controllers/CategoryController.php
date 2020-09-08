@@ -74,7 +74,7 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         $products = $category->products()
-          ->paginate(9);
+          ->paginate();
 
         return view('category.show', [
           'category' => $category,
@@ -121,6 +121,6 @@ class CategoryController extends Controller
     {
         $category->delete();
 
-        return redirect('/');
+        return redirect()->route('home');;
     }
 }

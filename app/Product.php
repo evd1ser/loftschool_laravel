@@ -12,6 +12,8 @@ class Product extends Model implements HasMedia
     use SoftDeletes;
     use InteractsWithMedia;
 
+    protected $perPage = 9;
+
     protected $fillable = [
       'title',
       'price',

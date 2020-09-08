@@ -13,18 +13,13 @@ class CreateCategory extends FormRequest
      */
     public function authorize()
     {
-        try {
-            $user = auth()->user();
-
-            if ($user->is_admin) {
-                return true;
-            } else {
-                return false;
-            }
-        } catch (\Exception $e) {
-
+        if (auth()->quest) {
             return false;
         }
+        if (!auth()->user()->is_admin) {
+            return false;
+        }
+        return true;
     }
 
     /**

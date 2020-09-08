@@ -7,9 +7,16 @@ use Illuminate\View\View;
 
 class RandomProductComposer
 {
+    private $product;
+
+    public function __construct(Product $productModel)
+    {
+        $this->product = $productModel;
+    }
+
     public function compose(View $view)
     {
-        $product = Product::inRandomOrder()
+        $product = $this->product->inRandomOrder()
           ->first();
 
         return $view->with('randomProduct', $product);
